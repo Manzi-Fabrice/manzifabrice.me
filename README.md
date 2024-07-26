@@ -6,16 +6,3 @@ Accurate Measurement Collection: Ensure all hotspots with values above a given t
 Efficient Resource Utilization: Decide when and where to deploy sensors to maximize measurement accuracy while minimizing resource use.
 We utilize Gaussian Process Regression to provide uncertainty estimates, informing the robot about where to head to next. Various strategies like batching and uncertainty updates are employed to enhance the approach.
 
-Table of Contents
-Introduction
-Project Structure
-Installation
-Usage
-Examples
-Importing OpenDrift Data
-Basic Plotting
-Gaussian Process Regression
-Modeling Robotic Decision-Making
-Contributing
-License
-Acknowledgments
