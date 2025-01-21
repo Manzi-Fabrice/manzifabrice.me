@@ -1,0 +1,408 @@
+<!-- HTML Part: Lab 02, COSC 52 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BuzzFeed</title>
+  </head>
+  <body>
+    <header>
+      <div id="progress-bar">
+        <div id="progress" style="width: 0%"></div>
+      </div>
+    </header>
+
+    <section id="front-page" style="display: block">
+      <img
+        src="https://img.notionusercontent.com/s3/prod-files-secure%2Fd83971e5-26d6-43ac-a27a-17fe122d6a47%2F144a999f-e0e8-4b2a-90e0-6b6045dc22fc%2FCS52-logo-official.png/size/w=2000?exp=1737443014&sig=Gh5VYghQvs43ZYfE3TvRJGKn1pt0C0gniXalxT2Qo8I"
+        id="background-logo"
+      />
+      <div class="text-box">
+        <h1>Welcome to the ultimate CS52 survival BuzzFeed!</h1>
+        <p>
+          Answer honestly (or as sarcastically as you like) to find out if
+          you’ll thrive, survive, or barely make it through!
+        </p>
+        <button onclick="startQuiz()">Let’s get started!</button>
+      </div>
+    </section>
+    <!-- Quiz Section -->
+
+    <section id="questions">
+      <div class="question_screen" id="question1" style="display: block">
+        <p id="qtn" class="big-title">Why did you take this class?</p>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q1" data-score="2" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTRrbm5obTZiZnR0enNkNTQ4bzR4dDlneWMzZzViMzNrMGE2bWVncSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bgY4vP5vNglyxHE1QV/giphy.gif"
+                alt="Option 1 GIF"
+              />
+            </div>
+            <p>What else after CS30 and CS31?</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q1" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmRsNGxjM3k3bHNxcm9jb3l3Ymx5bmRqdWxxeW1nZ3AyeDhucXczMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vYkkabxSqRBIJlk5TX/giphy.gif"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>I heard it was supposed to be a layup…</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q1" data-score="3" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2Z4bHUwbnNlZGFsdG95cmk4Mm41bG9rdG5zYWZsaWtiN3c3ZmlicSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jqz9Nd7u9UrrS4UMj9/giphy.gif"
+                alt="Option 3 GIF"
+              />
+            </div>
+            <p>
+              I wanted to build cool stuff, spend the night building TikTok.
+            </p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q1" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTh5enA3ZHBqZHRvd3JkODR3amtxZ3didDFkYWoyZ2t1N2JkcjZqeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0K4jrpWppNAAzucU/giphy.gif"
+                alt="Option 4 GIF"
+              />
+            </div>
+            <p>It was the only class that fit my schedule.</p>
+          </label>
+        </div>
+
+        <div class="button-container">
+          <button onclick="goToNext(1)" class="nav-button">Next</button>
+        </div>
+      </div>
+
+      <div class="question_screen" id="question2" style="display: block">
+        <p id="qtn" class="big-title">What’s your approach to debugging?</p>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q2" data-score="2" />
+            <div class="gif-wrapper">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1400/1*8ec0-crehv5zepqkBK1Wdw.gif"
+              />
+            </div>
+            <p>Console.log() everything untill the problem cries.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q2" data-score="4" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tumblr.com/9076e13dd16f4344ac0ad63471e5485a/tumblr_inline_ms99jwvMbF1qz4rgp.gif"
+              />
+            </div>
+            <p>Time for camping in office hours.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q2" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media4.giphy.com/media/iiSb58oATiANL65Dd2/giphy.gif?cid=6c09b952d94h3soamaewxqnykt3z9q9nbqaatghqaxdinjvf&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
+              />
+            </div>
+            <p>Find ChatGPT: copy-paste, and hope for the best.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q2" data-score="3" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tenor.com/gEoeXF1YTdUAAAAM/tri%E1%BB%87u-h%E1%BB%93i-summon.gif"
+              />
+            </div>
+            <p>I summon Stack Overflow gods.</p>
+          </label>
+        </div>
+
+        <div class="button-container">
+          <button onclick="goToPrevious(2)" class="nav-button">Previous</button>
+          <button onclick="goToNext(2)" class="nav-button">Next</button>
+        </div>
+      </div>
+
+      <div class="question_screen" style="display: none" id="question3">
+        <p id="qtn" class="big-title">How do you feel about CSS?</p>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q3" data-score="4" />
+            <div class="gif-wrapper">
+              <img
+                src="https://imgproxy.attic.sh/Xe-1P433-GF7LOkf30hZYtdFB2z5D0oRe_vgGJRPjBY/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC9kbnMxeTIy/OWE0ZHQycHpscWpn/aGd6ZzJmaW8z.png"
+              />
+            </div>
+            <p>It’s the only thing keeping my project pretty.</p>
+          </label>
+          <label class="image-block">
+            <input type="radio" name="q3" data-score="3" />
+            <div class="gif-wrapper">
+              <img
+                src="https://imgproxy.attic.sh/XKq55glvSocV1vtSVnHUdS8VV50gsNOOJ-XlC4fFEWA/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC9udmU2aHo4/amtrOWZpMXdrY21r/M2x5Zzlwenp5.png"
+              />
+            </div>
+            <p>It’s a necessary evil.</p>
+          </label>
+          <label class="image-block">
+            <input type="radio" name="q3" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8d9b038e-7496-464a-8ca4-32591a0dfb5d/dfixa7f-e0faefd9-847b-4704-a548-6528bf966e03.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhkOWIwMzhlLTc0OTYtNDY0YS04Y2E0LTMyNTkxYTBkZmI1ZFwvZGZpeGE3Zi1lMGZhZWZkOS04NDdiLTQ3MDQtYTU0OC02NTI4YmY5NjZlMDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lCA7glAh42A7-1wAl7Ux9QkyZZa15YOv0RL_E6W1lx8"
+              />
+            </div>
+            <p>How's Margin different from Padding?</p>
+          </label>
+          <label class="image-block">
+            <input type="radio" name="q3" data-score="0" />
+            <div class="gif-wrapper">
+              <img
+                src="https://static-00.iconduck.com/assets.00/neutral-face-emoji-1024x1024-mcbovdti.png"
+              />
+            </div>
+            <p>I don’t style anything. Ugly chic is in.</p>
+          </label>
+        </div>
+
+        <div class="button-container">
+          <button onclick="goToPrevious(3)" class="nav-button">Previous</button>
+          <button onclick="goToNext(3)" class="nav-button">Next</button>
+        </div>
+      </div>
+
+      <div class="question_screen" style="display: none" id="question4">
+        <p id="qtn" class="big-title">
+          It’s 03:00 AM, and your JavaScript isn’t working. What do you do?
+        </p>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q4" data-score="3" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media0.giphy.com/media/mkhMTALnrYRLnuoe5P/giphy.gif?cid=6c09b952p6z74frd32zb1pswpu9450v841d8dzbihuo7fk0f&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+              />
+            </div>
+            <p>Take a break—it’s probably a typo.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q4" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tenor.com/5qHvGMx9eJMAAAAM/throwing-papers-im-done.gif"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>Burn the whole project down and rewrite it from scratch.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q4" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media1.giphy.com/media/ieVhKh95JE4DtiQPwS/200w.gif?cid=82a1493bxbfessw9x25zij3u6l56ufb6gvhph0lg8u25jpg1&ep=v1_gifs_related&rid=200w.gif&ct=g"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>Start wondering if I should’ve majored in something else</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q4" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media2.giphy.com/media/7NoNw4pMNTvgc/200w.gif?cid=6c09b95273iibnj5d1pl7gskwg78f1bkw36fw9b44cof5adg&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>Send a desperate message in slack.</p>
+          </label>
+        </div>
+
+        <div class="button-container">
+          <button onclick="goToPrevious(4)" class="nav-button">Previous</button>
+          <button onclick="goToNext(4)" class="nav-button">Next</button>
+        </div>
+      </div>
+
+      <div class="question_screen" style="display: none" id="question5">
+        <p id="qtn" class="big-title">
+          You’re behind on assignments. How do you recover?
+        </p>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q5" data-score="4" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media4.giphy.com/media/13GIgrGdslD9oQ/giphy.gif?cid=6c09b952v9xf4k4z3p2wjywblcdakvkpzjbpx3f49aa2mbb3&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+              />
+            </div>
+            <p>Pull three all-nighters and power through.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q5" data-score="2" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tenor.com/9NghotgmTCoAAAAM/rowan-atkinson-mr-bean.gif"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>Use extension tab on Brunchlabs</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q5" data-score="2" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media3.giphy.com/media/JULfVYQH3XkCxMV0QP/200w.gif?cid=6c09b952ih5qr185ipeqisxkkai9t57bc36tzla1ggwitjs2&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>Submit and pray my TA is feeling generous.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q5" data-score="0" />
+            <div class="gif-wrapper">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1400/1*8ec0-crehv5zepqkBK1Wdw.gif"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>Text my bro for the code and call it a day.</p>
+          </label>
+        </div>
+
+        <div class="button-container">
+          <button onclick="goToPrevious(5)" class="nav-button">Previous</button>
+          <button onclick="goToNext(5)" class="nav-button">Next</button>
+        </div>
+      </div>
+
+      <div class="question_screen" style="display: none" id="question6">
+        <p id="qtn" class="big-title">
+          What’s your attitude toward group projects?
+        </p>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q6" data-score="4" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tenor.com/Q75Fzyr3eqYAAAAM/day-off-group-jump.gif"
+              />
+            </div>
+            <p>Teamwork makes the dream work!</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q6" data-score="2" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tenor.com/u8YEMwIfJGMAAAAM/thanos.gif"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>I’ll just do all the work myself.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q6" data-score="0" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media0.giphy.com/media/9ffHU0j3xeJIcLwF4z/200.gif?cid=6c09b9526wne7ah84n9rryh4haemwxdkgjbk6sudv2w474nm&ep=v1_gifs_search&rid=200.gif&ct=g"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>I delegate tasks and ghost the group chat until demo day.</p>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q6" data-score="1" />
+            <div class="gif-wrapper">
+              <img
+                src="https://media.tenor.com/vNHQHuYlmS4AAAAM/pat-on-the-back-dr-frasier-crane.gif"
+                alt="Option 2 GIF"
+              />
+            </div>
+            <p>I show up, but mostly for moral support.</p>
+          </label>
+        </div>
+
+        <div class="button-container">
+          <button onclick="goToPrevious(6)" class="nav-button">Previous</button>
+          <button onclick="goToNext(6)" class="nav-button">Next</button>
+        </div>
+      </div>
+
+      <div class="question_screen" id="question7" style="display: none">
+        <h1 class="big-title">How much did you lie while taking this quiz?</h1>
+
+        <div class="image-block-container">
+          <label class="image-block">
+            <input type="radio" name="q7" data-score="3" />
+            <div class="gif-wrapper">
+              <p>I was 100% honest… promise!</p>
+            </div>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q7" data-score="2" />
+            <div class="gif-wrapper">
+              <p>Just a little. I’m trying to make myself look good here.</p>
+            </div>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q7" data-score="1" />
+            <div class="gif-wrapper">
+              <p>I lied so much even I don’t know the truth anymore.</p>
+            </div>
+          </label>
+
+          <label class="image-block">
+            <input type="radio" name="q7" data-score="0" />
+            <div class="gif-wrapper">
+              <p>Still thinking if I should even be honest here</p>
+            </div>
+          </label>
+        </div>
+
+        <label class="button-container">
+          <button class="nav-button" onclick="goToPrevious(7)">Previous</button>
+          <button class="nav-button" onclick="showResults()">
+            View Results
+          </button>
+        </label>
+      </div>
+    </section>
+
+    <section id="Results" style="display: none">
+      <div id="result-container" class="text-box">
+        <h2 id="ResultClass"></h2>
+        <p id="ResultDescription"></p>
+        <button onclick="Home()" class="nav-button">Go Home</button>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
